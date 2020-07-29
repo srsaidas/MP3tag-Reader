@@ -7,5 +7,6 @@ MP3 tag reader is a software which will read and display MP3 (ID3) tag informati
 ./a.out -h
 ```
 it will print all the available commands that can be used with this binary file
+
 ![Image of help command](https://raw.githubusercontent.com/srsaidas/mp3tag/master/image/help.png)
 
