@@ -17,10 +17,20 @@ it will print all the available commands that can be used with this binary file
 ```
 ![Image of MP3 tag printing ](https://raw.githubusercontent.com/srsaidas/mp3tag/master/image/usage.png)
 
+### Modify tag data
+
+To modify title imformation  and view those information 
+```
+./a.out -t "Saidas" sample.mp3 
+./a.out sample.mp3
+```
+
+![Image of MP3 tag printing ](https://raw.githubusercontent.com/srsaidas/mp3tag/master/image/modify.png)
+
+similarly we can use others commands to modify tag information
 
 
 
 
-
-
-~[Saidas S R!](https://sites.google.com/view/saidas/home)
+~Thanks
+[Saidas S R!](https://sites.google.com/view/saidas/home)
