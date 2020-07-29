@@ -10,3 +10,17 @@ it will print all the available commands that can be used with this binary file
 
 ![Image of help command](https://raw.githubusercontent.com/srsaidas/mp3tag/master/image/help.png)
 
+### Print MP3 tag details 
+```
+./a.out <mp3.file>
+./a.out sample.mp3
+```
+![Image of MP3 tag printing ](https://raw.githubusercontent.com/srsaidas/mp3tag/master/image/usage.png)
+
+
+
+
+
+
+
+~[Saidas S R!](https://sites.google.com/view/saidas/home)
