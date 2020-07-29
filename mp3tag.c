@@ -1,9 +1,11 @@
 #include <stdio.h>
 #include<string.h>
+#include <ctype.h>
 #include <stdlib.h>
 #include "common.h"
 #include "type.h"
-//===========================Main Start=================================
+#include "edit.h"
+
 int main(int argc, char * argv[])
 {
 		MP3Info mp3Info;
@@ -16,23 +18,28 @@ int main(int argc, char * argv[])
 								break;
 
 						case e_file:
-								find_meta(argc, argv, &mp3Info);
+								if(find_meta(argc, argv[1], &mp3Info) == e_success)
+										print_tag_data(&mp3Info);
 								break;
 
 						case e_option:
-								printf("e-option");
+								if(do_option(argc,argv, &mp3Info) == e_failure)
+								{		print_help();}
 								break;
+						case e_ver:
+								printf("Vesrion 1.1\n");
+								break;
+
 						default:
+								printf("Invalid option ---'%s'", argv[1]);
 								print_help();
 								break;
 				}
+
 		}
 		else
 		{
-				printf("Not enough number of arguments!\n");
+				printf("Invalid option--\n");
 				print_help();
 		}
 }
-//==========================Main END ============================
-
-
